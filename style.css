@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #dc9494;
+  overflow-x: hidden;
+}
+
+/* Robot Section */
+.robot-section {
+  position: relative;
+  text-align: center;
+  background: #753939;
+  padding: 40px 20px;
+}
+.robot-section img {
+  width: 150px;
+  animation: point 2s infinite ease-in-out;
+}
+@keyframes point {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-5deg); }
+}
+
+/* Gradient Circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  z-index: 0;
+}
+.gradient1 {
+  width: 150px;
+  height: 150px;
+  top: 20px;
+  left: 20px;
+  background: radial-gradient(circle, #ff7e5f, #feb47b);
+}
+.gradient2 {
+  width: 120px;
+  height: 120px;
+  top: 100px;
+  right: 20px;
+  background: radial-gradient(circle, #6a11cb, #2575fc);
+}
+
+/* Fading Gradient */
+.fade-strip {
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
+}
+
+/* Tic Tac Toe */
+.game-container {
+  text-align: center;
+  padding: 30px;
+  background: #381d9c;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  margin: 20px auto;
+  justify-content: center;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  line-height: 100px;
+  border: 2px solid #333;
+  cursor: pointer;
+  background: #e936a1;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Monoline Icon */
+.icon {
+  margin-top: 40px;
+  text-align: center;
+}
+.icon svg {
+  width: 40px;
+  height: 40px;
+  stroke: #000;
+  stroke-width: 2;
+  fill: none;
+}
+
+/* Quote */
+.quote {
+  margin: 40px auto;
+  max-width: 600px;
+  font-style: italic;
+  font-size: 1.2rem;
+  border-left: 4px solid black;
+  padding-left: 15px;
+  color: #333;
+  background: #fff;
+}
